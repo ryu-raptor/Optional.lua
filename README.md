@@ -28,6 +28,6 @@ end)
 fclose(handler) -- This operation succeeds, Optional(nil) is safely closed.
 
 handler = fopen("file.txt", "w")
-handler:write("file wrote") -- This operation fails(colon method call bug)
+handler:write("file wrote") -- This call suceeds and the text is wrote to a file.
 fclose(handler)
 ~~~
